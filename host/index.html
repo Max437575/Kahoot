@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="option-container">
+                <button class="option" id="option0">
+                    <img id="option0img" src="/assets/img/2.png" />
+                    <br />
+                    <p id="option0q" class="rounded-box"></p>
+                </button>
+                <button class="option" id="option1">
+                    <img id="option1img" src="/assets/img/3.png" />
+                    <br />
+                    <p id="option1q" class="rounded-box"></p>
+                </button>
+                <button class="option" id="option2">
+                    <img id="option2img" src="/assets/img/5.png" />
+                    <br />
+                    <p id="option2q" class="rounded-box"></p>
+                </button>
+            </div>
+            <div class="answer-container">
+                <button class="option answer">
+                    <img
+                        class="answer-img"
+                        id="jumpImg"
+                        src="/assets/pfp/kohl.png"
+                    />
+                    <br />
+                    <p class="rounded-box answer-text">Helmut Kohl</p>
+                </button>
+            </div>
+            <div class="team-container">
+                <div class="team" id="team0">
+                    <img src="/assets/img/2r.png" />
+                    <br />
+                    <p id="team0points" class="rounded-box">Nix</p>
+                    <div id="team0players"></div>
+                </div>
+                <div class="team" id="team1">
+                    <img src="/assets/img/3r.png" />
+                    <br />
+                    <p id="team1points" class="rounded-box">Nada</p>
+                    <div id="team1players"></div>
+                </div>
+                <div class="team" id="team2">
+                    <img src="/assets/img/5r.png" />
+                    <br />
+                    <p id="team2points" class="rounded-box">0,0</p>
+                    <div id="team2players"></div>
+                </div>
+            </div>
+            <div class="podium-container">
+                <div class="podium place-4th">
+                    <img src="/assets/pfp/kim.png" id="place-3-img" />
+                    <p class="rounded-box" id="place-3-p">Helmut Kohl</p>
+                </div>
+                <div class="podium place-2nd">
+                    <img src="/assets/pfp/ohair.png" id="place-1-img" />
+                    <p class="rounded-box" id="place-1-p">
+                        Helmut Kohl<br />80000 Punkte
+                    </p>
+                </div>
+                <div class="podium place-1st">
+                    <img src="/assets/pfp/mode.png" id="place-0-img" />
+                    <p class="rounded-box" id="place-0-p">Helmut Kohllllllll</p>
+                </div>
+                <div class="podium place-3rd">
+                    <img src="/assets/pfp/obamna.png" id="place-2-img" />
+                    <p class="rounded-box" id="place-2-p">Helmut Kohl</p>
+                </div>
+                <div class="podium place-5th">
+                    <img src="/assets/pfp/klaviatur.png" id="place-4-img" />
+                    <p class="rounded-box" id="place-4-p">Helmut Kohl</p>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="socket.io.min.js"></script>
+    <script src="script.js"></script>
+</html>

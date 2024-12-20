@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>2, 3 oder 5</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="theme-color" content="#d71128" />
+    </head>
+    <body>
+        <main>
+            <div class="option-container" style="display: none">
+                <button class="option" id="option0">
+                    <img id="option0Img" src="/assets/pfp/gaga.png" />
+                    <br />
+                    <p id="option0Text">„Dr.“ Maximilian Krah</p>
+                </button>
+                <button class="option" id="option1">
+                    <img id="option1Img" src="/assets/pfp/kohl.png" />
+                    <br />
+                    <p id="option1Text">„Dr.“ Maximilian Krah</p>
+                </button>
+                <button class="option" id="option2">
+                    <img id="option2Img" src="/assets/pfp/mode.png" />
+                    <br />
+                    <p id="option2Text">„Dr.“ Maximilian Krah</p>
+                </button>
+            </div>
+
+            <div class="login-container">
+                <div class="panel login">
+                    <img src="/assets/logo.png" class="cahuut-img" />
+                    <hr />
+                    <input class="username-input" placeholder="Votre nom" />
+                    <section class="pfp-input"></section>
+                    <div class="panel login-button">Beitreten 😘</div>
+                    <hr />
+                    <p>
+                        © Max Felder 2024, alle Rechte vorbehalten. Alles meins.
+                        Ich schwör auf Caspar, Melchior, Balthasar, die
+                        Grinsekatze aus Alice im Wunderland, Joseph Smith, und
+                        Martin Sonneborn, dass »2, 3 oder 5« nichts mit »1, 2
+                        oder 3« zu tun hat und ein komplett eigenes, originelles
+                        Konzept meiner Wenigkeit ist.
+                    </p>
+                </div>
+            </div>
+            <div class="intermission-container" style="display: none">
+                <div class="intermission">
+                    <p class="intermission-emoji">💁</p>
+                    <p class="intermission-text">Es geht gleich los ja</p>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="socket.io.min.js"></script>
+    <script src="script.js"></script>
+</html>
